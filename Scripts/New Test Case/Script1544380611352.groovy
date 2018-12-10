@@ -16,7 +16,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://192.168.33.11:3000/users')
+WebUI.navigateToUrl('http://192.168.56.14:3000/users')
 
 WebUI.click(findTestObject('Object Repository/Page_TestApp/html_TestApp              kata'))
 
@@ -39,6 +39,10 @@ WebUI.click(findTestObject('Object Repository/Page_TestApp/input_Age_commit'))
 WebUI.click(findTestObject('Object Repository/Page_TestApp/a_Back'))
 
 WebUI.click(findTestObject('Object Repository/Page_TestApp/a_Destroy'))
+
+WebUI.acceptAlert()
+
+WebUI.refresh()
 
 WebUI.closeBrowser()
 
